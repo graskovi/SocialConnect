@@ -5,7 +5,7 @@
 $ npm install
 ```
 
-##### Then to run for iOS
+##### To run for iOS
 
 ```
 $ react-native run-ios
