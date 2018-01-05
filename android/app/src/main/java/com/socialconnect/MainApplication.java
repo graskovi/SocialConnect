@@ -1,4 +1,4 @@
-package com.reactnativereduxexample;
+package com.socialconnect;
 
 
 import com.facebook.react.ReactNativeHost;
