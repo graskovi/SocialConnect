@@ -19,12 +19,12 @@ $ react-native run-android
 ```
 
 
-# Explanation of React-Native-Navigation Wix with Redux
+# Built using React-Native-Navigation Wix with Redux
 
 
 React Native version: 0.47.1
 
-##### Folder Structure:
+##### Folder Structure (liable to change):
 
 ```
 
