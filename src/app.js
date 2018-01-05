@@ -39,7 +39,7 @@ export default class  App extends Component {
         case 'login':
           Navigation.startSingleScreenApp({
                     screen: {
-                    screen: 'ReactNativeReduxExample.Login', // unique ID registered with Navigation.registerScreen
+                    screen: 'SocialConnect.Login', // unique ID registered with Navigation.registerScreen
                     title: 'Welcome', // title of the screen as appears in the nav bar (optional)
                     navigatorStyle: {}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
                     navigatorButtons: {} // override the nav buttons for the screen, see "Adding buttons to the navigator" below (optional)
@@ -52,7 +52,7 @@ export default class  App extends Component {
                 tabs: [
                 {
                     label: 'Home',
-                    screen: 'ReactNativeReduxExample.HomeTab',
+                    screen: 'SocialConnect.HomeTab',
                     icon: require('./img/checkmark.png'),
                     selectedIcon: require('./img/checkmark.png'),
                     title: 'Hey',
@@ -62,7 +62,7 @@ export default class  App extends Component {
 
                 {
                     label: 'Search',
-                    screen: 'ReactNativeReduxExample.SearchTab',
+                    screen: 'SocialConnect.SearchTab',
                     icon: require('./img/checkmark.png'),
                     selectedIcon: require('./img/checkmark.png'),
                     title: 'Hey',

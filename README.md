@@ -84,7 +84,7 @@ export default class  App extends Component {
           Navigation.startSingleScreenApp({
             case 'login':
                   screen: {
-                    screen: 'ReactNativeReduxExample.Login', 
+                    screen: 'SocialConnect.Login', 
                     title: 'Welcome', 
                     navigatorStyle: {}, 
                     navigatorButtons: {} 
@@ -97,7 +97,7 @@ export default class  App extends Component {
                 tabs: [
                 {
                     label: 'Home',
-                    screen: 'ReactNativeReduxExample.HomeTab',
+                    screen: 'SocialConnect.HomeTab',
                     icon: require('./img/checkmark.png'),
                     selectedIcon: require('./img/checkmark.png'),
                     title: 'Hey',
@@ -107,7 +107,7 @@ export default class  App extends Component {
 
                 {
                     label: 'Search',
-                    screen: 'ReactNativeReduxExample.SearchTab',
+                    screen: 'SocialConnect.SearchTab',
                     icon: require('./img/checkmark.png'),
                     selectedIcon: require('./img/checkmark.png'),
                     title: 'Hey',
@@ -137,9 +137,9 @@ import HomeTab from './homeTab';
 import SearchTab from './searchTab';
 
 export default (store, Provider) =>  {
-Navigation.registerComponent('ReactNativeReduxExample.Login', () => Login, store, Provider);
-Navigation.registerComponent('ReactNativeReduxExample.HomeTab', () => HomeTab, store, Provider);
-Navigation.registerComponent('ReactNativeReduxExample.SearchTab', () => SearchTab, store, Provider);
+Navigation.registerComponent('SocialConnect.Login', () => Login, store, Provider);
+Navigation.registerComponent('SocialConnect.HomeTab', () => HomeTab, store, Provider);
+Navigation.registerComponent('SocialConnect.SearchTab', () => SearchTab, store, Provider);
 }
 
 ```
