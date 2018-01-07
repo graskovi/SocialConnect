@@ -31,13 +31,13 @@ class Login extends Component {
     </Button>*/}
             <Button
               raised
-              icon={{ name: 'cached' }}
+              //icon={{ name: 'cached' }}
               title='Login'
               onPress={() => this.onLoginPress()}
             />
             <Button
               raised
-              icon={{ name: 'cached' }}
+              //icon={{ name: 'cached' }}
               title='Create account'
               onPress={() => this.onLoginPress()}
             />
