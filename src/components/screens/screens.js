@@ -1,7 +1,7 @@
 import { Navigation } from 'react-native-navigation';
-import Login from './login';
-import HomeTab from './homeTab';
-import SearchTab from './searchTab';
+import Login from './LoginTab';
+import HomeTab from './HomeTab';
+import SearchTab from './SearchTab';
 
 
 export default (store, Provider) => {

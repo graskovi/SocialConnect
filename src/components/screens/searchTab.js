@@ -5,7 +5,7 @@ import {
   Text,
   View
 } from 'react-native';
-import {Navigation} from 'react-native-navigation';
+import { Navigation } from 'react-native-navigation';
 
 export default class Searchtab extends Component {
   render() {
@@ -31,5 +31,4 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-  
 });
