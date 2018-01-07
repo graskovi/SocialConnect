@@ -6,13 +6,23 @@ import {
   View
 } from 'react-native';
 import { Navigation } from 'react-native-navigation';
+import { SearchBar } from 'react-native-elements';
 
 export default class Searchtab extends Component {
+  onSearchBarChange() {
+    console.log('Search bar changed!');
+  }
+
   render() {
     return (
       <View style={styles.container}>
+        <SearchBar
+          onChangeText={() => this.onSearchBarChange()}
+          onClearText={() => this.onSearchBarChange()}
+          placeholder='Search chats here...'
+        />
         <Text style={styles.welcome}>
-          SEARCH!!!
+          Flatlist to go here
         </Text>
       </View>
     );
