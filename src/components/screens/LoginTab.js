@@ -22,8 +22,11 @@ class Login extends Component {
   render() {
     return (
         <View>
-            <Button large onPress={() => this.onLoginPress()} title="Continue">
-                <Text>Continue</Text>
+            <Button large onPress={() => this.onLoginPress()} title="Login">
+                <Text>Login</Text>
+            </Button>
+            <Button large onPress={() => this.onLoginPress()} title="Create Account">
+                <Text>Create Account</Text>
             </Button>
         </View>
         
