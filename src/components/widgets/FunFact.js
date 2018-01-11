@@ -6,16 +6,6 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-const styles = StyleSheet.create({
-  button: {
-    alignItems: 'center',
-    backgroundColor: '#DDDDDD',
-    padding: 10,
-    margin: 20,
-    borderRadius: 20
-  }
-});
-
 export default class FunFact extends Component {
   constructor(props) {
     super(props);
@@ -43,3 +33,13 @@ export default class FunFact extends Component {
     );
   }
 } // end of class FunFact
+
+const styles = StyleSheet.create({
+  button: {
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
+    padding: 10,
+    margin: 20,
+    borderRadius: 20
+  }
+});
