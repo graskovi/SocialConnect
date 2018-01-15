@@ -7,9 +7,8 @@ import {
   Image
 } from 'react-native';
 import { Navigation } from 'react-native-navigation';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import * as  appActions from '../../actions/index';
+import * as appActions from '../../actions/index';
 import FunFact from '../widgets/FunFact';
 
 const avatarBlank = require('../../img/Avatar_Blank.png');

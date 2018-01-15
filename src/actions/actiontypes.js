@@ -1,2 +1,2 @@
-export const INITIALIZED = 'kreu.app.INITIALIZED';
-export const ROOT_CHANGED = 'kreu.app.ROOT_CHANGED';
+export const INITIALIZED = 'rask.app.INITIALIZED';
+export const ROOT_CHANGED = 'rask.app.ROOT_CHANGED';

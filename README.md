@@ -34,10 +34,10 @@ React Native version: 0.47.1
      index.js
   --/components
      --/screens
-        homeTab.js
-        login.js
+        HomeTab.js
+        LoginTab.js
         screens.js
-        searchTab.js
+        ChatList.js
   --/img
      checkmark.png
   --/reducers
@@ -132,9 +132,9 @@ To have your components access to the states that you are keeping track of throu
 ```
 
 import { Navigation } from 'react-native-navigation';
-import Login from './login';
-import HomeTab from './homeTab';
-import SearchTab from './searchTab';
+import LoginTab from './LoginTab';
+import HomeTab from './HomeTab';
+import ChatList from './ChatList';
 
 export default (store, Provider) =>  {
 Navigation.registerComponent('SocialConnect.Login', () => Login, store, Provider);

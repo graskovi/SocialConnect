@@ -30,3 +30,8 @@ export function login() {
   };
 }
 
+/*export function createAccount() {
+  return async function(dispatch, getState) {
+    // create account logic in here, afterwards switch app roots
+  };
+}*/
