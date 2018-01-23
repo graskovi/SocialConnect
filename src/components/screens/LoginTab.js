@@ -41,27 +41,28 @@ class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.container}>
-          <Text style={styles.title}>SocialConnect</Text>
-        </View>
-        <View style={styles.logo}>
-          <Image
-            style={{ width: 180, height: 112 }}
-            source={logo}
-          />
+        <View style={styles.title}>
+        {/*<View style={styles.container}>*/}
+          <Text style={styles.appName}>SocialConnect</Text>
+        {/*</View>*/}
+          <View style={styles.padding}>
+            <Image
+              style={{ width: 180, height: 117 }}
+              source={logo}
+            />
+          </View>
         </View>
         <View style={styles.buttonContainer}>
-          <Button
-            raised
-            //icon={{ name: 'cached' }}
-            title='Login'
-            onPress={() => this.onLoginPress()}
-            containerViewStyle={{ borderRadius: 25 }}
-            rounded
-          />
-        </View>
-        
-        <View style={styles.buttonContainer}>
+          <View style={styles.padding}>
+            <Button
+              raised
+              //icon={{ name: 'cached' }}
+              title='Login'
+              onPress={() => this.onLoginPress()}
+              containerViewStyle={{ borderRadius: 25 }}
+              rounded
+            />
+          </View>
           <Text style={styles.textStyle}>New here?</Text>
           <Button
             raised
@@ -84,28 +85,29 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     backgroundColor: '#FFA500'
   },
-  title: {
-    flex: 2,
-    alignItems: 'center',
-    justifyContent: 'center',
+  appName: {
     fontSize: 20,
     fontWeight: 'bold'
   },
   textStyle: {
-    flex: 1,
     fontSize: 16,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
-  logo: {
-    flex: 2
-  },
-  buttonContainer: {
+  title: {
     flex: 2,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  padding: {
+    marginVertical: 20
+  },
+  buttonContainer: {
+    flex: 3,
+    alignItems: 'center',
+    justifyContent: 'flex-start'
   }
 });
 

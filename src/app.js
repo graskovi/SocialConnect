@@ -45,10 +45,10 @@ export default class App extends Component {
         case 'login':
           Navigation.startSingleScreenApp({
                     screen: {
-                    screen: 'SocialConnect.LoginTab', // unique ID registered with Navigation.registerScreen
-                    title: 'Login', // title of the screen as appears in the nav bar (optional)
-                    navigatorStyle: {}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
-                    navigatorButtons: {} // override the nav buttons for the screen, see "Adding buttons to the navigator" below (optional)
+                    screen: 'SocialConnect.LoginTab', // unique ID from Navigation.registerScreen
+                    title: 'Login', // title of the screen as appears in the nav bar
+                    navigatorStyle: {}, // override the navigator style for the screen
+                    navigatorButtons: {} // override the nav buttons for the screen
                     },
                 });
                 return;
@@ -63,7 +63,7 @@ export default class App extends Component {
                     selectedIcon: earthImg,
                     title: 'Profile',
                     overrideBackPress: false,
-                    navigatorStyle: {}
+                    //navigatorStyle: {}
                 },
 
                 {
@@ -72,9 +72,7 @@ export default class App extends Component {
                     icon: checkmarkImg,
                     selectedIcon: checkmarkImg,
                     title: 'Chats',
-                    navigatorStyle: {}
-
-                    
+                    //navigatorStyle: {}
                 },
 
                 {
@@ -83,10 +81,19 @@ export default class App extends Component {
                     icon: avatarImg,
                     selectedIcon: avatarImg,
                     title: 'Contacts',
-                    navigatorStyle: {}
+                    //navigatorStyle: {}
                 }
                
                 ],
+
+                tabsStyle: {
+                    tabBarTranslucent: true,
+                    drawUnderTabBar: true
+                },
+
+                appStyle: {
+                    tabBarTranslucent: true
+                }
             });
             return;
 
