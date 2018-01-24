@@ -86,7 +86,11 @@ export default class ContactTab extends Component {
           />
         </TouchableHighlight>*/}
         <HomeButton />
-        <SearchBar placeholder='Search chats here...' lightTheme round />
+        <SearchBar
+          placeholder='Search chats here...'
+          lightTheme
+          round
+        />
       </View>
     );
   }
