@@ -45,11 +45,18 @@ export default class App extends Component {
         case 'login':
           Navigation.startSingleScreenApp({
                     screen: {
-                    screen: 'SocialConnect.LoginTab', // unique ID from Navigation.registerScreen
-                    title: 'Login', // title of the screen as appears in the nav bar
-                    navigatorStyle: {}, // override the navigator style for the screen
-                    navigatorButtons: {} // override the nav buttons for the screen
+                        screen: 'SocialConnect.LoginTab', // unique ID from registerScreen
+                        title: 'Login', // title of the screen as appears in the nav bar
+                        navigatorStyle: {}, // override the navigator style for the screen
+                        navigatorButtons: {} // override the nav buttons for the screen
                     },
+                    // TODO ADD CREATE ACCOUNT HERE
+                    accountScreen: {
+                        screen: 'SocialConnect.CreateAccount',
+                        title: 'Create Account',
+                        navigatorStyle: {},
+                        navigatorButtons: {}
+                    }
                 });
                 return;
               
@@ -67,8 +74,8 @@ export default class App extends Component {
                 },
 
                 {
-                    label: 'Search',
-                    screen: 'SocialConnect.SearchTab',
+                    label: 'Search Chats',
+                    screen: 'SocialConnect.ChatList',
                     icon: checkmarkImg,
                     selectedIcon: checkmarkImg,
                     title: 'Chats',

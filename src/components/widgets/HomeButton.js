@@ -16,11 +16,11 @@ export default class HomeButton extends Component {
   render() {
     return (
       <TouchableHighlight>
-        <Image
-          style={{ width: 45, height: 28 }}
-          source={{ logo }}
-        />
-      </TouchableHighlight>
+          <Image
+            style={{ width: 45, height: 28 }}
+            source={logo}
+          />
+        </TouchableHighlight>
     );
   }
 } // end of class HomeButton

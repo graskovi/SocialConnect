@@ -3,7 +3,6 @@ import {
   AppRegistry,
   TouchableOpacity,
   Text,
-  //Button,
   View,
   StyleSheet,
   Image
@@ -42,9 +41,7 @@ class Login extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.title}>
-        {/*<View style={styles.container}>*/}
           <Text style={styles.appName}>SocialConnect</Text>
-        {/*</View>*/}
           <View style={styles.padding}>
             <Image
               style={{ width: 180, height: 117 }}
@@ -59,7 +56,7 @@ class Login extends Component {
               //icon={{ name: 'cached' }}
               title='Login'
               onPress={() => this.onLoginPress()}
-              containerViewStyle={{ borderRadius: 25 }}
+              containerViewStyle={styles.buttonStyle}
               rounded
             />
           </View>
@@ -68,10 +65,9 @@ class Login extends Component {
             raised
             //icon={{ name: 'cached' }}
             title='Create account'
-            //onPress={() => this.onLoginPress()}
             // TODO CHANGE TO onCreateAccountPress
             onPress={() => this.onLoginPress()}
-            containerViewStyle={{ borderRadius: 25 }}
+            containerViewStyle={styles.buttonStyle}
             rounded
           />
         </View>
@@ -108,6 +104,10 @@ const styles = StyleSheet.create({
     flex: 3,
     alignItems: 'center',
     justifyContent: 'flex-start'
+  },
+  buttonStyle: {
+    borderRadius: 25,
+    width: 200
   }
 });
 

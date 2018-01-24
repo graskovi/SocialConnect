@@ -9,6 +9,7 @@ import {
   Image
 } from 'react-native';
 import { ListItem, SearchBar } from 'react-native-elements';
+import HomeButton from '../widgets/HomeButton';
 
 const logo = require('../../img/SC_Logo.png');
 const blankAvatar = require('../../img/Avatar_Blank.png');
@@ -78,14 +79,15 @@ export default class ContactTab extends Component {
   renderHeader = () => {
     return (
       <View style={styles.header}>
-        <TouchableHighlight>
+        {/*<TouchableHighlight>
           <Image
             style={{ width: 45, height: 28 }}
             source={logo}
           />
-        </TouchableHighlight>
+        </TouchableHighlight>*/}
+        <HomeButton />
         <SearchBar placeholder='Search chats here...' lightTheme round />
-        </View>
+      </View>
     );
   }
 
