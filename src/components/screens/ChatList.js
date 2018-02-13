@@ -9,6 +9,17 @@ import {
   Image
 } from 'react-native';
 import { ListItem, SearchBar } from 'react-native-elements';
+import { Navigation } from 'react-native-navigation';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import * as reducers from '../../reducers/index';
+/*import registerScreens from './screens';
+
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+const reducer = combineReducers(reducers);
+const store = createStoreWithMiddleware(reducer);*/
+//registerScreens(store, Provider);
 
 const logo = require('../../img/SC_Logo.png');
 const blankAvatar = require('../../img/Avatar_Blank.png');
@@ -16,6 +27,8 @@ const blankAvatar = require('../../img/Avatar_Blank.png');
 export default class ChatList extends Component {
   constructor(props) {
     super(props);
+
+    //this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
 
     this.state = {
       loading: false,
@@ -26,6 +39,13 @@ export default class ChatList extends Component {
       refreshing: false
     };
   }
+
+  /*onNavigatorEvent(event) {
+    this.props.navigator.push({
+      screen: 'SocialConnect.Chat',
+      title: 'Sample Chat'
+    });
+  }*/
 
   componentDidMount() {
     this.makeRemoteRequest();

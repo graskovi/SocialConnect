@@ -21,15 +21,19 @@ const checkmarkImg = require('./img/Checkmark.png');
 const earthImg = require('./img/Earth.png');
 const avatarImg = require('./img/Avatar_Blank.png');
 
+const homeImg = require('./img/one.png');
+const plusImg = require('./img/navicon_add.png');
+const transImg = require('./img/transform.png');
+
 export default class App extends Component {
 
-  constructor(props) {
-    super(props);
-    store.subscribe(this.onStoreUpdate.bind(this));
-    store.dispatch(appActions.appInitialized());
-  }
+    constructor(props) {
+        super(props);
+        store.subscribe(this.onStoreUpdate.bind(this));
+        store.dispatch(appActions.appInitialized());
+    }
  
-  onStoreUpdate() {
+    onStoreUpdate() {
       let { root } = store.getState().root;
      
       // handle a root change
@@ -66,8 +70,10 @@ export default class App extends Component {
                 {
                     label: 'Home',
                     screen: 'SocialConnect.HomeTab',
-                    icon: earthImg,
-                    selectedIcon: earthImg,
+                    //icon: earthImg,
+                    //selectedIcon: earthImg,
+                    icon: homeImg,
+                    selectedIcon: homeImg,
                     title: 'Profile',
                     overrideBackPress: false,
                     //navigatorStyle: {}
@@ -75,9 +81,12 @@ export default class App extends Component {
 
                 {
                     label: 'Search Chats',
-                    screen: 'SocialConnect.ChatList',
-                    icon: checkmarkImg,
-                    selectedIcon: checkmarkImg,
+                    //screen: 'SocialConnect.ChatList',
+                    screen: 'SocialConnect.Chat',
+                    //icon: checkmarkImg,
+                    //selectedIcon: checkmarkImg,
+                    icon: plusImg,
+                    selectedIcon: plusImg,
                     title: 'Chats',
                     //navigatorStyle: {}
                 },
@@ -85,8 +94,10 @@ export default class App extends Component {
                 {
                     label: 'Contacts',
                     screen: 'SocialConnect.ContactTab',
-                    icon: avatarImg,
-                    selectedIcon: avatarImg,
+                    /*icon: avatarImg,
+                    selectedIcon: avatarImg,*/
+                    icon: transImg,
+                    selectedIcon: transImg,
                     title: 'Contacts',
                     //navigatorStyle: {}
                 }
@@ -105,7 +116,7 @@ export default class App extends Component {
             return;
 
           default: 
-            console.log('Not Root Found');
+            console.log('No Root Found');
         }
     }
 }
