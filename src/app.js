@@ -81,8 +81,8 @@ export default class App extends Component {
 
                 {
                     label: 'Search Chats',
-                    //screen: 'SocialConnect.ChatList',
-                    screen: 'SocialConnect.Chat',
+                    screen: 'SocialConnect.ChatList',
+                    //screen: 'SocialConnect.Chat',
                     //icon: checkmarkImg,
                     //selectedIcon: checkmarkImg,
                     icon: plusImg,
