@@ -36,7 +36,7 @@ export default class FunFact extends Component {
 
 const styles = StyleSheet.create({
   button: {
-    alignItems: 'center',
+    alignItems: 'flex-start',
     backgroundColor: '#DDDDDD',
     padding: 10,
     margin: 20,
